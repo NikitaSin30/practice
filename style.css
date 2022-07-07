@@ -79,37 +79,14 @@ h6 {
   font-weight: 400;
 }
 .example-block {
-  border: 1px black solid;
-  height: 200px;
- 
-  width: 300px;
- overflow: scroll;
+  /* border: 2px black solid; */
+  font-size: 30px;
+  margin: 40px;
+  opacity: 0.3;
 }
 
 .example-string {
-  padding: 20px;
+  font-size: 30px;
 }
 .examle-image {
- height: 100px;
-}
-.one{
-margin: 30px;
-
-}
-.two{
-display: block;
-margin: 30px;
-}
-.three{
-
-margin: 30px;
-
-}
-.four{
-display: inline-block;
-margin: 30px;
-
-}
-.five{
-    display: flex;
 }
