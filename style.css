@@ -83,12 +83,8 @@ body{
 }
 .block {
   /* border: 2px black solid; */
-  /* background: url("/1.jpg") no-repeat right; */
-  background: #627d4d;
-background: -moz-linear-gradient(-45deg, #627d4d 52%, #1f3b08 100%);
-background: -webkit-linear-gradient(-45deg, #627d4d 52%,#1f3b08 100%);
-background: linear-gradient(135deg, #627d4d 52%,#1f3b08 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#627d4d', endColorstr='#1f3b08',GradientType=1 );
+  background: url("/1.jpg") no-repeat bottom left;
+  
   height: 400px;
   border-radius: 15px;
   box-shadow: 0 0 10px black;
