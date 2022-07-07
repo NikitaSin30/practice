@@ -78,18 +78,31 @@ h6 {
   font-size: inherit;
   font-weight: 400;
 }
-body{
-    padding: 30px;
+body {
+  padding: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 .block {
   /* border: 2px black solid; */
-  background: url("/1.jpg") no-repeat bottom left;
-  
-  height: 400px;
+  background: url("/1.jpg") center bottom no-repeat,
+    url("/rano-vesnoy.jpg") 50% / cover no-repeat;
+  overflow: hidden;
+
+  height: 600px;
   border-radius: 15px;
-  box-shadow: 0 0 10px black;
+  box-shadow: 0 0 10px 5px black;
+  color: azure;
+  font-size: 16px;
 }
 
+.list {
+  margin: 0 0 50px 0;
+}
 
-.examle-image {
-} 
+.list li{
+    font-size: 25px;
+ margin: 0 0 15px 0 ;
+ background: url('/1.jpg') left top no-repeat;  
+ padding-left: 50px;  
+}
