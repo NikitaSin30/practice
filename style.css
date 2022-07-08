@@ -81,41 +81,42 @@ h6 {
 }
 /* Конец обнуляющего стиля */
 
-
-
 body {
- 
   padding: 30px;
   font-size: 25px;
 }
 
-
 .block {
-    border: 5px solid red;
-    max-width: 880px;
-    height: 880px;
-    margin: 0 auto;
-    position: relative;
+  border: 5px solid red;
+  max-width: 880px;
+  height: 1880px;
+  margin: 0 auto;
+  position: relative;
 }
-.block div{
-    line-height: 50px;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
+.block div {
+  line-height: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
 }
 .block__1 {
-    background-color: aqua;
- 
+  background-color: aqua;
 }
 .block__2 {
-    background-color: burlywood;
-   position: absolute;
-   width: 100%;
-  top: 20px;
-  left: 0;
+  background-color: burlywood;
+  position: sticky;
+  width: 100%;
+
+  top: 0px;
+  left: 0px;
 }
 .block__3 {
-    background-color: brown;
-   position: relative;
-   z-index: 3;
+  background-color: brown;
+}
+.block__4{
+    background-color: black;
+    color: white;
+    position: sticky;
+    top: 0;
+
 }
