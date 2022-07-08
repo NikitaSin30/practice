@@ -84,118 +84,38 @@ h6 {
 
 
 body {
-  background-color: rgb(212, 209, 205);
+ 
   padding: 30px;
   font-size: 25px;
 }
 
 
-
-h1 {
-  text-transform: uppercase;
+.block {
+    border: 5px solid red;
+    max-width: 880px;
+    height: 880px;
+    margin: 0 auto;
+    position: relative;
 }
-.content {
-  max-width: 1100px;
-  width: auto 100%;
-  width: 1100px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
+.block div{
+    line-height: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
 }
-.content_item {
-  width: auto 100px;
-  max-width: 900px;
+.block__1 {
+    background-color: aqua;
+ 
 }
-
-.list {
-  font-size: 20px;
-  margin-bottom: 30px;
+.block__2 {
+    background-color: burlywood;
+   position: absolute;
+   width: 100%;
+  top: 20px;
+  left: 0;
 }
-.list li {
-  margin-top: 30px;
-  background: url(/1.jpg) 0 0 no-repeat;
-  padding-left: 60px;
-}
-.list li:nth-child(1) {
-  text-decoration: line-through;
-}
-.list li:nth-child(1):hover {
-  text-decoration: none;
-}
-.list li:nth-child(2) {
-  font-weight: bold;
-}
-.list li:nth-child(2):hover {
-  color: red;
-  font-weight: normal;
-}
-.list li:nth-child(3) {
-  font-style: italic;
-}
-.list li:nth-child(3):hover {
-  font-style: normal;
-}
-.list li:nth-child(4) span {
-  text-transform: uppercase;
-}
-.list li:nth-child(4) span {
-  opacity: 0.6;
-}
-.list li:nth-child(4) span:hover {
-  text-transform: none;
-  opacity: 1;
-  text-decoration: line-through;
-}
-
-.textInput {
-  border: 1px solid black;
-  width: 300px;
-  height: 100px;
-  margin-bottom: 10px;
-  border-radius: 15px;
-}
-.textInput:focus {
-  box-shadow: 0px 0px 8px 2px rgb(42, 158, 224);
-}
-.textButton {
-  display: block;
-  width: 300px;
-  height: 40px;
-
-  border-radius: 20px;
-  background-color: rgb(12, 145, 145);
-  color: white;
-  text-transform: uppercase;
-}
-.textButton:hover {
-  background-color: rgb(4, 70, 10);
-}
-.textButton:active {
-  background-color: rgb(2, 26, 9);
-}
-.text {
-  font-size: 24px;
-  line-height: 33px;
-  margin: 30px 0px 30px 0px;
-}
-.list2 {
-}
-.list2 li {
-  font-size: 24px;
-  margin: 0px 0px 20px 0px;
-}
-.text::first-letter{
-    color: green;
-}
-.list2 li::before{
-    content:'';
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: red;
-    display: inline-block;
-    margin-right: 10px;
-}
-.list2 li:hover::before{
-    background-color: yellow;
+.block__3 {
+    background-color: brown;
+   position: relative;
+   z-index: 3;
 }
