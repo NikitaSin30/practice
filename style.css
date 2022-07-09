@@ -82,24 +82,45 @@ h6 {
 /* Конец обнуляющего стиля */
 
 body {
-  padding: 30px;
-  font-size: 25px;
+ 
 }
+.content {
+max-width: 1100px;
+margin: 0 auto;
+height: 1000px;
+position: relative;
+text-align: center;
+}
+.content__navbar {
+background-color: rgb(69, 173, 43);
+height: 40px;
+padding: 10px 0px ;
+position: fixed;
+top: 0;
+left: 0;
+width: 1100px;
 
-.list {
+width: 100%;
+
+
 }
-.list li {
-  margin: 0px 0px 40px 0px;
-  position: relative;
-  padding: 0 0 0 50px;
+.content__one{
+word-spacing: 20px;
+
+ 
 }
-.list li::before{
-    content:'';
-    background: url(/1.jpg) 0 0 no-repeat;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: -17px;
-    left: 0;
-    bottom: 0px;
+/* .content__two{
+  word-spacing: 20px;
+ 
+  float: right;
+  padding-right: 20px;
+} */
+.content__navbar li{
+display: inline-block;
+
+}
+.content__navbar a{
+  color: white;
+  font-size: 20px;
+
 }
