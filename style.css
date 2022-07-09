@@ -106,15 +106,15 @@ width: 100%;
 }
 .content__one{
 word-spacing: 20px;
-
- 
+float: left;
+ padding-left:  200px; ;
 }
-/* .content__two{
+.content__two{
   word-spacing: 20px;
  
   float: right;
-  padding-right: 20px;
-} */
+  padding-right: 200px;
+}
 .content__navbar li{
 display: inline-block;
 
