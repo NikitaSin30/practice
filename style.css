@@ -86,37 +86,20 @@ body {
   font-size: 25px;
 }
 
-.block {
-  border: 5px solid red;
-  max-width: 880px;
-  height: 1880px;
-  margin: 0 auto;
+.list {
+}
+.list li {
+  margin: 0px 0px 40px 0px;
   position: relative;
+  padding: 0 0 0 50px;
 }
-.block div {
-  line-height: 50px;
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-}
-.block__1 {
-  background-color: aqua;
-}
-.block__2 {
-  background-color: burlywood;
-  position: sticky;
-  width: 100%;
-
-  top: 0px;
-  left: 0px;
-}
-.block__3 {
-  background-color: brown;
-}
-.block__4{
-    background-color: black;
-    color: white;
-    position: sticky;
-    top: 0;
-
+.list li::before{
+    content:'';
+    background: url(/1.jpg) 0 0 no-repeat;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -17px;
+    left: 0;
+    bottom: 0px;
 }
