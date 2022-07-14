@@ -125,8 +125,8 @@ header::before{
   height: 74px ;
  z-index: 2;
 }
-.header__menu {
-}
+/* .header__menu {
+} */
 .header_navbar {
   display: flex;
   justify-content: space-between;
@@ -466,12 +466,7 @@ font-size: 44px;
     max-width: 800px;
     max-height: 800px;
   }
-  .oneApp__cardContent {
-    
-  /* width: 387px;
-  height: 318px;
-  letter-spacing: 0.4px; */
-  }
+ 
   .oneApp__buttom{
     width: 226px;
 height: 61px;
@@ -573,6 +568,9 @@ left: 0;
    
    
   }
+  .oneApp{
+    padding-top: 0;
+  }
   .oneApp__title{
     max-width: 460px;
 max-height: 240px;
@@ -638,6 +636,48 @@ margin-top: 0;
    max-width: 660px;
    /* top: 0px; */
    bottom: 200px;
+  }
+  .oneApp{
+    padding-top: 0;
+  }
+  .oneApp__title{
+    max-width: 340px;
+max-height: 200px;
+font-size: 20px;
+line-height: 38px;
+left: 0;
+top: 0;
+
+
+  }
+  .oneApp__video{
+    max-width: 340px;
+    max-height: 280px;
+    left: 0;
+    top: 40px;
+  }
+  .oneApp__card {
+    margin-top: 0px;
+    position: relative;
+    top: 70px;
+    display: inline;
+    
+   
+    
+  }
+  .oneApp__cardContent {
+    margin: 12px 0;
+    overflow: scroll;
+   width: 340px;
+  height: 280px;
+  font-size: 16px;
+  padding-left: 25px;
+  }
+  .oneApp__buttom{
+    width: 226px;
+    height: 61px;
+    left: 64px;
+    top: 50px;
   }
 }
  /* main{
