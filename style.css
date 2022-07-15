@@ -384,12 +384,15 @@ padding-left: 35px;
 line-height: 23px;
 background-color: #F5F5F5;
 letter-spacing: 0.4px;
+
 }
 .oneApp__cardContent:first-child{
   background-color: black;
   color: white;
 }
 .oneApp__imgCard {
+  width: 100%;
+  max-width: 70px;
   position: relative;
   top: 10px;
   left: 0px;
@@ -427,7 +430,128 @@ text-transform: capitalize;
 color: #000000;
 }
 
+/* Третья  страница*/
 
+.third {
+  width: 100%;
+}
+.compititors {
+  
+  
+  color: #000000;
+  position: relative;
+ 
+  display: flex;
+  
+  
+}
+.compititors__img {
+  position: relative;
+  top:0;
+  left: 0;
+  margin-top: 200px;
+  
+  
+ 
+}
+/* .compititors__img img{
+  max-width: 570px;
+  width: 100%;
+  max-width: 620px;
+  height: 100%; */
+
+.compititors__title {
+ /* position: relative; */
+ 
+ /* left: 0;
+ top:0;
+ right:0; */
+min-width: 590px;
+max-height: 610px;
+margin-top: 240px;
+margin-left: 30px;
+
+}
+.compititors__titleText h2{
+  width: 566px;
+  height: 120px;
+   line-height: 60px;
+  font-family: 'Krona One';
+  letter-spacing: -0.03em;
+  text-transform: capitalize;
+  font-size: 45px;
+  /* display: block;
+  position: absolute;
+  right: 0;
+  
+  font-weight: 400;
+  
+  */
+  
+  
+ 
+}
+.compititors__titleText h3{
+  width: 590px;
+  height: 69px;
+  font-family: 'Inter';
+   font-size: 18px;
+   line-height: 23px;
+  /* position: relative;
+  
+
+left: 30px;
+top:120px;
+
+
+
+
+
+color: #000000; */
+}
+
+
+.compititors__card {
+  display: flex;
+  margin-top:50px;
+max-width: 545px;
+max-height: 173px;
+}
+.compititors__cardImg img{
+ max-width: 100px;
+ width: 100%;
+
+}
+.compititors__divText{
+  padding-left: 20px;
+}
+.compititors__cardTittle {
+
+max-width: 423px;
+max-height: 40px;
+
+
+font-family: 'Krona One';
+
+
+font-size: 25px;
+line-height: 40px;
+/* identical to box height, or 160% */
+
+letter-spacing: -0.03em;
+text-transform: capitalize;
+margin-left: 0px;
+}
+
+.compititors_cardText {
+  /* position: relative; */
+width: 450px;
+height: 115px;
+font-family: 'Inter';
+font-size: 18px;
+line-height: 23px;
+margin-left: 0px;
+}
 
 @media (max-width: 1200px){
   main{
@@ -474,11 +598,86 @@ left: 360px;
 top: 50px;
     
   }
-}
+  .third {
+    width: 100%;
+    max-height: 1000px;
+    height: 100%;
+  }
+  .compititors {
+    max-width: 750px;
+    width: 100%;
+    text-align: left;
+  }
+  .compititors__img img{
+    max-width: 400px;
+    max-height: 800px;
+    height: 100%;
+  }
+   .compititors__cardImg img{
+    width: 45px;
+    
+   }
+
+  .compititors__titleText h2{
+    width: 440px;
+    height: 120px;
+    font-size: 30px;
+    
+    
+    
+   
+  }
+  .compititors__titleText h3{
+    max-width: 640px;
+    width: 100%;
+    max-height: 69px;
+    height: 69%;
+   
+  }
+  
+  .compititors__card {
+  max-width: 440px;
+  width: 100%;
+  max-height: 143px;
+  height: 100%;
+  
+  }
+  .compititors__card {
+    margin-bottom: 70px;
+  }
+  /* .compititors__cardImg img {
+   max-width: 70px;
+   width: 100%;
+  
+  } */
+  
+  .compititors__cardTittle {
+  max-width: 323px;
+  width: 100%;
+  max-height: 40px;
+  width: 100%;
+  font-size: 21px;
+  margin-left: 10px;
+ 
+  }
+  
+  .compititors_cardText {
+    /* position: relative; */
+  width: 380px;
+  height: 175px;
+  margin-top: 10px;
+  margin-left: 18px;
+  }
+  }
+  
+
 @media (max-width: 992px){
   main{
     max-width: 750px;
   } 
+  .second{
+  min-height: 1700px;  
+  }
   .content__title{
     font-size: 24px;
     max-width: 320px;
@@ -515,12 +714,29 @@ left: 0;
     max-height: 720px;
     left: 0;
   }
+
+  .oneApp__card {
+    margin-top: 0px;
+    position: relative;
+    top: 90px;
+    display: inline-block;
+    left: 20px;
+   
+    
+    
+  }
+  .oneApp__imgCard{
+    max-width: 50px;
+    
+  }
   .oneApp__cardContent {
+    margin: 12px 0;
     overflow: scroll;
-   width: 240px;
-  height: 280px;
+   max-width: 680px;
+   width: 100%;
+  height: 260px;
   font-size: 16px;
-  padding-left: 25px;
+  padding: 15px;
   }
   .oneApp__buttom{
     width: 226px;
@@ -528,7 +744,84 @@ left: 0;
     left: 250px;
     top: 50px;
   }
+
+
+.third {
+  width: 100%;
+  max-height: 1000px;
+  height: 100%;
 }
+.compititors {
+  max-width: 750px;
+  width: 100%;
+  text-align: left;
+}
+.compititors__img {
+ display: none;
+  
+ 
+}
+
+
+.compititors__title {
+
+min-width: 590px;
+max-height: 610px;
+margin-top: 240px;
+margin-left: 30px;
+
+}
+.compititors__titleText h2{
+  width: 640px;
+  height: 120px;
+  font-size: 40px;
+  
+  
+  
+ 
+}
+.compititors__titleText h3{
+  max-width: 640px;
+  width: 100%;
+  max-height: 69px;
+  height: 69%;
+ 
+}
+
+.compititors__card {
+max-width: 640px;
+width: 100%;
+/* max-height: 173px; */
+height: 100%;
+margin-bottom: 30px;
+margin-top: 40px;
+
+}
+.compititors__cardImg img {
+ max-width: 70px;
+ width: 100%;
+max-height: 70px;
+height: 100%;
+}
+
+.compititors__cardTittle {
+max-width: 423px;
+width: 100%;
+max-height: 40px;
+width: 100%;
+font-size: 23px;
+margin-left: 10px;
+}
+
+.compititors_cardText {
+  /* position: relative; */
+width: 540px;
+height: 115px;
+margin-top: 10px;
+margin-left: 18px;
+}
+}
+
 @media (max-width: 767px){
   main{
     max-width: 460px;
