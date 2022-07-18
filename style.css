@@ -86,7 +86,9 @@ h6 {
 } */
 html,
 body {
+  height: 5500px;
   height: 100%;
+  /* height: 100%; */
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-size: 18px;
@@ -234,10 +236,11 @@ main{
   margin: 0 auto;
   padding: 0 10px;
   max-width: 1200px;
-  height: 100%;
-  max-height: 4510px;
+  height: 5300px;
+  
 }
   .first{
+    
     height:1000px ;
      }
   .first::before{
@@ -313,7 +316,7 @@ background-color: #748308;
 position: relative;
 /* width: 1052px;
 height: 1052px; */
-left: 400px;
+left: 360px;
 bottom: 340px;
 /* background: url(/Hero\ Image.svg); */
 }
@@ -321,6 +324,7 @@ bottom: 340px;
   max-width: 100%;
   display: block;
   z-index: 10;
+  
 }
 
 /* Вторая страница */
@@ -760,33 +764,129 @@ text-transform: capitalize;
   color: black;
   font-family: 'Inter';
 font-size: 18px;
-
+max-height: 450px;
+height: 100%;
 }
 .faq {
-
-
-text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+  align-items: center;
+  margin-top: 50px;
   
-}
-.faq h2{
-  
-  font-size: 40px;
-  text-align: center;
-}
-.faq__question {
-  /* ; */
-}
-
-
-details{
  
 }
+.faq h2{
+  font-size: 40px;
+  margin-bottom: 30px;
+  font-family: 'Krona One';
+  font-weight: bold;
+}
+
+.faq__question {
+ margin-top: 15px;
+  
+}
+
+
 .faq__answerQ{
-  width: 793px;
-height: 55px;
-background-color: #8F85B3;
+display: flex;
+
 }
 .faq__answer {
+}
+details {
+  border: 1px solid #F2F0F0;
+  border-radius: 4px;
+  padding: .5em .5em 0;
+  max-width: 790px;
+  width: 100%;
+  background-color:#F2F0F0 ;
+}
+
+summary {
+  list-style: none;
+  font-weight: bold;
+  margin: -.5em -.5em 0;
+  padding: .5em;
+  display: flex;
+  justify-content:  space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] {
+  padding: .5em;
+  max-width: 790px;
+  width: 100%;
+  
+  height: 100%;
+}
+
+details[open] summary {
+  border-bottom: 1px solid #F2F0F0;
+  margin-bottom: .5em;
+}
+details summary::before {
+  content: ' ';
+  display: inline-block;
+  background: url(/Polygon\ 1.svg);
+  height: .8em;
+  width: .8em;
+  background-size: .8em .8em;
+  
+}
+/* footer */
+footer{
+  
+  width:100% ;
+  
+  height: 100%;
+height:100px;
+  
+}
+footer::before{
+  content: '';
+position: absolute;
+top: 10;
+left: 0;
+height: 100%;
+height:100px;
+width: 100%;
+background-color: #140D2D;
+}
+.info {
+  position: relative;
+  color: white;
+  /* z-index: 2; */
+  font-family: 'Inter';
+  font-size: 18px;
+  line-height: 25px;
+  display: flex;
+  height: 100%;
+height:100px;
+width: 100%;
+  
+  justify-content: space-between;
+  align-items: center;
+}
+.info__mail {
+  font-family: 'Inter';
+
+}
+.info__mail a{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.info__link:hover{
+  
+  color: #3811c4;
+}
+.info__textLogo {
+ 
 }
 @media (max-width: 1200px){
   main{
@@ -910,6 +1010,13 @@ top: 50px;
 .accessImg{
   top: 60px;
 }  
+.five{
+  max-height: 640px;
+  height: 640px;
+}
+.six{
+  margin-top: 80px;
+}
 }
   
 
@@ -992,7 +1099,7 @@ left: 0;
 
 .third {
   width: 100%;
-  max-height: 1000px;
+  max-height: 820px;
   height: 100%;
 }
 .compititors {
@@ -1071,8 +1178,12 @@ margin-left: 18px;
 .four{
   margin-top: 40px;
 }
+
+.five{
+  max-height: 600px;
+}
 .accessImg{
-  top: 50px;
+  top: 10px;
 }
 .access__nameMailDiv {
   width: 440px;
@@ -1089,7 +1200,7 @@ margin-left: 18px;
   max-height: 590px;
   height: 100%;
   width: 100%;
- padding-top: 80px;
+ padding-top: 70px;
 }
 .access_title {
 font-size: 40px;
@@ -1098,6 +1209,9 @@ line-height: 60px;
 }
 .access__text {
 
+}
+.six{
+  margin-top: 50px;
 }
 }
 
@@ -1297,6 +1411,26 @@ margin-top: 0;
   .access__text {
   
   }
+  .six{
+    margin-left: 0px;
+  }
+  .faq{
+    margin-top: 0px;
+    max-width: 440px;
+    max-width: 100%;
+  }
+.info{
+  font-size: 16px;
+  flex-direction: column;
+  align-items: center;
+}
+.info__mail{
+  margin-top: 20px;
+ 
+}
+.info__textLogo{
+  margin-bottom: 20px;
+}
   }
 @media (max-width: 460px){
   main{
@@ -1484,6 +1618,32 @@ top: 0;
   .acces__form{
     margin-top: 50px;
   }
+  .six{
+    margin-left: 0px;
+  }
+  .faq{
+    margin-top: 0px;
+    max-width: 320px;
+    max-width: 100%;
+    font-size: 14px;
+  }
+.faq h2
+details{
+  max-width: 320px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 10px;
+  
+}
+details[open]{
+  max-width: 340px;
+  width: 100%;
+}
+.six{
+  max-height: 360px;
+  height: 100%;
+  margin-top: 70px;
+}
 }
  /* main{
   min-width: 320px;
