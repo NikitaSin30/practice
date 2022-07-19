@@ -91,20 +91,27 @@ body {
 .block__row{
   display: flex;
   border: 20px solid yellow;
-  margin: 0px 0px 0px 0px;
+  margin: 0px 0px 20px 0px;
+  height: 900px;
+  flex-direction: column;
   
+  justify-content: space-between;
+  
+  
+  
+ 
 }
 
 .block__column{
   border: 20px solid purple;
-  flex-basis: auto ;
-  flex-grow: 0;
+  height: 200px;
+ 
 }
 .block__column_1{
 order: 2;
 }
 .block__column_2{
-  order: 0;
+  order: 3;
 }
 .block__column_3{
   order: 1;
@@ -115,5 +122,6 @@ order: 2;
   font-size: 50px;
   color: white;
   font-weight: 700;
+  text-align: center;
   
 }
