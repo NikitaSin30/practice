@@ -92,10 +92,13 @@ body {
   display: flex;
   border: 20px solid yellow;
   margin: 0px 0px 0px 0px;
+  
 }
 
 .block__column{
   border: 20px solid purple;
+  flex-basis: auto ;
+  flex-grow: 0;
 }
 .block__column_1{
 order: 2;
@@ -112,5 +115,5 @@ order: 2;
   font-size: 50px;
   color: white;
   font-weight: 700;
-  margin-bottom: 30px;
+  
 }
