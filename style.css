@@ -87,16 +87,24 @@ body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .block{
-  
 }
 .block__row{
   display: flex;
   border: 20px solid yellow;
-  margin: 0px 0px 20px 0px;
+  margin: 0px 0px 0px 0px;
 }
 
 .block__column{
   border: 20px solid purple;
+}
+.block__column_1{
+order: 2;
+}
+.block__column_2{
+  order: 0;
+}
+.block__column_3{
+  order: 1;
 }
 .block__item{
   background-color: aqua;
@@ -104,4 +112,5 @@ body {
   font-size: 50px;
   color: white;
   font-weight: 700;
+  margin-bottom: 30px;
 }
