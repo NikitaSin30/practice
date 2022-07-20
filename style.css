@@ -93,9 +93,10 @@ body {
   border: 20px solid yellow;
   margin: 0px 0px 20px 0px;
   height: 900px;
-  flex-direction: column;
+  flex-direction: row-reverse;
+  justify-content: start;
   
-  justify-content: space-between;
+  
   
   
   
@@ -109,9 +110,11 @@ body {
 }
 .block__column_1{
 order: 2;
+
 }
 .block__column_2{
   order: 3;
+  
 }
 .block__column_3{
   order: 1;
