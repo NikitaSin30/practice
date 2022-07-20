@@ -38,6 +38,7 @@ body {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  list-style-type: none;
 }
 
 input,
@@ -84,47 +85,96 @@ h6 {
 
 html,
 body {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  height: 100%;
+  line-height: 1;
+  font-size: 14px;
+  color: #252B42;
+  font-family: Montserrat;
+  font-weight: 500;
+  }
+
+.wrapper{
+min-height: 100%;
+overflow: hidden;
+display: flex;
+flex-direction: column;
+  }
+._container {
+  max-width: 1046px;
+  padding: 0px 15px;
+  margin: 0 auto;
+  box-sizing: content-box;
+ 
 }
-.block{
+
+
+/* -----------------------Шапка---------------------------------- */
+.header {
+  position: fixed ;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 50;
 }
-.block__row{
+.header__container {
   display: flex;
-  border: 20px solid yellow;
-  margin: 0px 0px 20px 0px;
-  height: 900px;
-  flex-direction: row-reverse;
-  justify-content: start;
-  
-  
-  
-  
-  
- 
+  min-height: 104px;
+  align-items: center;
+}
+@media(max-width: 479px){
+  .header__container {min-height: 70px;}
 }
 
-.block__column{
-  border: 20px solid purple;
-  height: 200px;
- 
-}
-.block__column_1{
-order: 2;
-
-}
-.block__column_2{
-  order: 3;
-  
-}
-.block__column_3{
-  order: 1;
-}
-.block__item{
-  background-color: aqua;
-  padding: 50px;
-  font-size: 50px;
-  color: white;
+.header__logo {
+  font-size: 24px;
   font-weight: 700;
-  text-align: center;
+  color: inherit;
+}
+.header__menu {
+  margin: 0px 0px 0px 133px;
+  padding: 5px 0 ;
+}
+@media(max-width: 992px){
+  .header__menu{
+    margin: 0 0 0 80px;
+  }
+}
+@media(max-width: 767px){
+  .header__menu{
+    margin: 0 0 0 40px;
+  }
+}
+@media(max-width: 479px){
+  .header__menu{
+    margin: 0 0 0 20px;
+  }
+}
+.menu {
+}
+.menu__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu__item {
   
+}
+.menu__item:not(:last-child){
+  margin: 0px 21px 0px 0px;
+}
+.menu__link {
+  color: #737373;
+  font-weight: 600;
+  line-height: 171%;
+}
+@media(max-width: 479px){
+  .header__menu{
+    font-size: 18px;
+  }
+}
+/* --------------Main page--------------- */
+.page{
+flex: 1 1 auto;
+}
+/* ----------------Подвал------------- */
+.footer{
 }
