@@ -180,11 +180,16 @@ body {
     font-size: 18px;
   }
 }
-/* --------------Main page--------------- */
+/* -------------- page--------------- */
 .page {
   flex: 1 1 auto;
 }
 .page__main-block {
+}
+.page__services {
+  position: relative;
+  margin: -111px 0px 0px 0px;
+  z-index: 51;
 }
 /* ----------------Подвал------------- */
 .footer {
@@ -297,9 +302,71 @@ body {
 }
 
 /* ----------Services---------- */
-.page__services {
-}
+
+
 .services {
+}
+.services__container {
+}
+
+.services__body {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -15px  ;
+}
+.services__column {
+  padding: 0px  15px;
+  flex: 0 1 33.333%;
+}
+.services__column:last-child{
+  /* padding-right: 30px; */
+}
+@media (max-width:992px){
+  .services__column{
+    flex: 0 1 100%;
+    padding: 0 15px 30px 15px;
+  }
+  .services__body {
+    
+  }
+}
+.services__item {
+  height: 100%;
+  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+  background-color: white;
+  padding: 35px;
+}
+.item-service {
+}
+.item-service > *:not(:last-child){
+margin: 0px 0px 10px 0px;
+}
+.item-service__green{
+ background-color: #0D5C63;
+}
+.item-service__green .item-service__title {
+  color: white;
+}
+.item-service__green .item-service__text{
+  color: white;
+}
+.item-service__icon {
+ 
+}
+.item-service__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  color: #252B42;
+}
+.item-service__text {
+  font-size: 14px;
+line-height: 20px;
+letter-spacing: 0.2px;
+color: #737373;
+}
+/* .services {
 }
 .services__container {
 }
@@ -316,45 +383,45 @@ body {
 
 .services__item {
   /* max-width: 328px; */
-}
 
 
+/* 
 .item-service {
    display: flex;
   flex-direction: column;
   padding: 35px 40px;
   /* border: 1px solid black; */
-  max-width: 328px;
+  /* max-width: 328px;
   box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
-  background-color: white;
-}
+  background-color: white; */
 
-.item-service > *:not(:last-child){
+
+/* .item-service > *:not(:last-child){
   padding: 0px 0px 10px 0px ;
-}
+} */
 
-.item-service__icon {
-}
-.item-service__title {
+/* .item-service__icon {
+} */
+/* .item-service__title {
   font-weight: 700;
 font-size: 24px;
 line-height: 32px;
 letter-spacing: 0.1px;
 color: #252B42;
-}
-.item-service__title:last-child{
+} */
+/* .item-service__title:last-child{
   color: white;
-}
-.item-service__text {
+} */
+/* .item-service__text {
 font-size: 14px;
 line-height: 20px;
 letter-spacing: 0.2px;
 color: #737373;
-}
+} */
 
 
 
- .item-service:last-child{
+ /* .item-service:last-child{
   background-color: #0D5C63;
   
-} 
+}   */
