@@ -97,6 +97,7 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  background-color: #FAFAFA;
 }
 ._container {
   max-width: 1046px;
@@ -190,6 +191,36 @@ body {
   position: relative;
   margin: -111px 0px 0px 0px;
   z-index: 51;
+}
+.page__advantages {
+}
+/* --------------------Header-block---------- */
+.header-block {
+  text-align: center;
+   
+}
+.header-block_title {
+    font-weight: 700;
+font-size: 40px;
+line-height: 57px;
+letter-spacing: 0.2px;
+color: #252B42;
+}
+.header-block_title:not(:last-child){
+  margin: 0px 0px 10px 0px;
+}
+.header-block__sub-title {
+  font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+text-align: center;
+letter-spacing: 0.2px;
+color: #737373;
+}
+@media (max-width:992px){
+  .header-block_title{
+    font-size: 36px;
+  }
 }
 /* ----------------Подвал------------- */
 .footer {
@@ -326,9 +357,6 @@ body {
     flex: 0 1 100%;
     padding: 0 15px 30px 15px;
   }
-  .services__body {
-    
-  }
 }
 .services__item {
   height: 100%;
@@ -425,3 +453,74 @@ color: #737373;
   background-color: #0D5C63;
   
 }   */
+/* -----------------Adventurs------------*/
+
+.advantages {
+  padding: 80px  0px;
+}
+@media (max-width:992px){
+  .advantages{
+    padding: 50px  0px;
+  }
+}
+.advantages__container {
+}
+
+.advantages__header {
+  margin: 0px 0px 50px 0px;
+}
+
+.advantages__body {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px 0px 0px -15px;
+}
+.advantages__column {
+  /* display: flex;
+  align-items: stretch; */
+  flex: 0 1 25%;
+  padding: 0px  15px;
+  margin: 0px 0px 15px 0px;
+  
+}
+@media (max-width:992px){
+  .advantages__column{
+    flex: 0 1 50%;
+  }
+}
+@media (max-width: 479px){
+  .advantages__column{
+    flex: 0 1 100%;
+    justify-content: center;
+  }
+}
+.advantages__item {
+  text-align: center;
+  background-color: white;
+  padding: 30px ;
+  font-weight: 700;
+}
+.advantages__item > *:not(:last-child){
+  margin: 0px 0px 10px 0px;
+}
+.advantages__icon {
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.advantages__value {
+  
+font-size: 40px;
+line-height: 57px;
+letter-spacing: 0.2px;
+color: #252B42;
+}
+.advantages__text {
+
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+letter-spacing: 0.1px;
+color: #737373;
+}
