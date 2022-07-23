@@ -198,6 +198,11 @@ body {
 }
 .page__whoweare {
 }
+.page__clients { 
+  margin: 0px 0px 10px 0px;
+}
+.page__subscribe {
+}
 /* --------------------Header-block---------- */
 .header-block {
   text-align: center;
@@ -742,4 +747,124 @@ white-space: nowrap;
 width: 225px;
 overflow: hidden;
 text-overflow: ellipsis;
+}
+
+
+/* --------------Clients------------- */
+
+.clients {
+  padding: 50px 0px;
+}
+.clients__container {
+ 
+}
+.clients__items{
+ display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+.clients__item {
+  flex: 0 1 16.3%;
+  text-align: center;
+  padding: 8px 15px;
+  min-width: 140px;
+}
+.clients__item img{
+  max-width: 100%;
+}
+
+@media(max-width:950px){
+  .clients__item{
+     flex: 0 1 33.33%;
+     
+  }
+  .clients__item{
+    align-items: flex-start ;
+    
+  }
+}
+@media(max-width:492px){
+  .clients__item{
+     flex: 0 1 50%;
+  }
+ 
+}
+/* @media(max-width:400px){
+  .clients__item{
+     flex: 0 1 100%;
+     
+  }
+ 
+} */ 
+
+/* ----------------Subscribe----------------- */
+
+.subscribe {
+  position: relative;
+}
+.subscribe::before{
+  content: "";
+  background-color: #252B42;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 77px;
+  width: 100%;
+
+}
+.subscribe__container {
+}
+
+.subsribe__body {
+  position: relative;
+  z-index: 10;
+ margin: 0px 30px;
+ padding:  30px 45px ;
+  display: flex;
+  justify-content: space-between;
+  background: #17213C;
+  align-items: center;
+  border-radius: 2px;
+  
+}
+.subscribe_title {
+  max-width: 266px;
+font-weight: 700;
+font-size: 24px;
+line-height: 32px;
+letter-spacing: 0.1px;
+color: #FFFFFF;
+}
+.subscribe__form {
+  flex: 0 1 50%;
+  display: flex ;
+  align-items: center;
+  
+}
+.subscribe__input {
+  flex: 1 1 auto;
+  min-height: 58px;
+  background-color: #F9F9F9;
+  border: 1px solid #E6E6E6;
+  border-radius: 5px 0px 0px 5px;
+  color: #737373;
+  border-right:0;
+  /* padding: 15px 161px 15px 20px; */
+  padding: 0px 20px;
+}
+.subscribe__input:focus{
+  color: black;
+}
+.subscribe__button {
+   background-color: #FF7B47;
+  border: 1px solid #E6E6E6;
+  border-radius: 0px 5px 5px 0px;
+  padding: 0px 20px;
+  min-height: 58px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
 }
