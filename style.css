@@ -803,6 +803,7 @@ text-overflow: ellipsis;
 
 .subscribe {
   position: relative;
+  padding: 0px 0px 20px 0px ;
 }
 .subscribe::before{
   content: "";
@@ -820,22 +821,46 @@ text-overflow: ellipsis;
 .subsribe__body {
   position: relative;
   z-index: 10;
- margin: 0px 30px;
+  
  padding:  30px 45px ;
-  display: flex;
-  justify-content: space-between;
+ 
   background: #17213C;
   align-items: center;
   border-radius: 2px;
-  
-}
+  }
+  @media(min-width:1070px){
+    .subsribe__body{
+      margin: 0px 30px;
+    }
+  }
+ 
 .subscribe_title {
-  max-width: 266px;
+  
 font-weight: 700;
 font-size: 24px;
 line-height: 32px;
 letter-spacing: 0.1px;
 color: #FFFFFF;
+}
+@media(max-width:810px){
+  .subscribe_title{
+    margin:0px 0px 20px 0px ;
+  }
+  .subsribe__body{
+    margin: 0px -15px;
+    padding: 20px 15px;
+  }
+  
+}
+@media(min-width:810px){
+  .subsribe__body{
+    display: flex;
+justify-content: space-between;
+  }
+  .subscribe_title{
+    max-width: 266px;
+  }
+  
 }
 .subscribe__form {
   flex: 0 1 50%;
@@ -844,6 +869,7 @@ color: #FFFFFF;
   
 }
 .subscribe__input {
+  width: 100%;
   flex: 1 1 auto;
   min-height: 58px;
   background-color: #F9F9F9;
